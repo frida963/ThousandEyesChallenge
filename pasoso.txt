@@ -3,7 +3,7 @@ Initialize a new virtual environment for your project:
     python -m venv env
     source env/bin/activate
 Install the necessary packages by running the following command in your project directory:
-
+    pip install fastapi requests uvicorn
 RUn with 
     python -m uvicorn main:app --reload
 
