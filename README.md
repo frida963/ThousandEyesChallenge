@@ -58,7 +58,66 @@ Run container
 To view a list of all configured tests in my Thousand Eyes Account 
 
 	http://localhost:8000/tests 
+	
+# Vulnerability Scan
+Run a vulnerability scan on the container image
+
+	(trivy installation required: https://github.com/aquasecurity/trivy#installation)
+	
+	trivy image myapi:latest
+
+Some results
+
+	myapi:latest (debian 11.7)
+
+	Total: 85 (UNKNOWN: 0, LOW: 65, MEDIUM: 2, HIGH: 17, CRITICAL: 1)
+
+Library  
+
+	Vulnerability 
+	
+	Severity 
+	
+	Installed Version
+	
+	Title     
+apt 
+
+	CVE-2011-3374
+
+	LOW
+
+	2.2.4
+
+	It was found that apt-key in apt, all versions, do not correctly...  https://avd.aquasec.com/nvd/cve-2011-3374 
+
+bash 
+
+	CVE-2022-3715
+
+	HIGH
+
+	5.1-2+deb11u1
+	a heap-buffer-overflow in valid_parameter_transform
+	https://avd.aquasec.com/nvd/cve-2022-3715 
+
+
+libdb5.3
+
+	CVE-2019-8457
+
+	CRITICAL
+
+	5.3.28+dfsg1-0.8
+
+	sqlite: heap out-of-bound read in function rtreenode()
+	https://avd.aquasec.com/nvd/cve-2019-8457  
+
+
+Based on the severity of the vulnerabilities found, appropriate actions should be taken.
+
 
 # References
   https://docs.docker.com/engine/
   https://developer.thousandeyes.com/v6/ 
+  https://github.com/aquasecurity/trivy#installation 
