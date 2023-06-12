@@ -1,16 +1,26 @@
 # ThousandEyesChallenge Documentation
 
 # API code
-Initialize a new virtual environment \\
+Initialize a new virtual environment 
+
 	  python -m venv env 
+	   
 	  source env/bin/activate 
+	  
 Install necessary packages 
+
 	  pip install fastapi requests uvicorn 
+	  
 Save requirements 
+
     pip freeze > requirements.txt 
+    
 Test locally with 
+
 	  python -m uvicorn main:app --reload 
+	  
     http://localhost:8000/tests 
+    
 
 
 
