@@ -3,29 +3,30 @@
 # API code
 Initialize a new virtual environment 
 
-	  python -m venv env 
-	   
-	  source env/bin/activate 
+	python -m venv env 
+	
+	source env/bin/activate 
 	  
 Install necessary packages 
 
-	  pip install fastapi requests uvicorn 
+	pip install fastapi requests uvicorn 
 	  
 Save requirements 
 
-    pip freeze > requirements.txt 
+	pip freeze > requirements.txt 
     
 Test locally with 
 
-	  python -m uvicorn main:app --reload 
+	python -m uvicorn main:app --reload 
 	  
-    http://localhost:8000/tests 
+http://localhost:8000/tests 
     
 
 
 
 # Docker image
 Create a Dockerfile
+
 	Dockerfile
       # Use an official Python runtime as the base image
       FROM python:3.9-slim
