@@ -66,11 +66,10 @@ Run a vulnerability scan on the container image
 	
 	trivy image myapi:latest
 
-Some results
+# Some results
+myapi:latest (debian 11.7)
 
-	myapi:latest (debian 11.7)
-
-	Total: 85 (UNKNOWN: 0, LOW: 65, MEDIUM: 2, HIGH: 17, CRITICAL: 1)
+Total: 85 (UNKNOWN: 0, LOW: 65, MEDIUM: 2, HIGH: 17, CRITICAL: 1)
 
 Library  
 
@@ -98,6 +97,7 @@ bash
 	HIGH
 
 	5.1-2+deb11u1
+	
 	a heap-buffer-overflow in valid_parameter_transform
 	https://avd.aquasec.com/nvd/cve-2022-3715 
 
