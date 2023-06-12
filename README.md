@@ -44,13 +44,16 @@ Create a Dockerfile
       CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
       
 Build image
-	  sudo docker build -t myapi .
+
+	sudo docker build -t myapi .
     
 Run container
-    sudo docker run -p 8000:8000 myapi
+
+	sudo docker run -p 8000:8000 myapi
     
 To view a list of all configured tests in my Thousand Eyes Account 
-    http://localhost:8000/tests 
+
+	http://localhost:8000/tests 
 
 # References
   https://docs.docker.com/engine/
