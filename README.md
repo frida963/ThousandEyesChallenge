@@ -1,5 +1,9 @@
 # ThousandEyesChallenge Documentation
 
+To run the docker image, extract the archive (ThousandEyesAPI.zip) and proceed to build and run the Docker image using the provided Dockerfile.
+
+Next are the steps followed to create the code and the docker image
+
 # API code
 Initialize a new virtual environment 
 
